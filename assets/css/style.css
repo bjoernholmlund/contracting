@@ -1,3 +1,16 @@
+@media (min-width: 550px) {
+  .header {
+    padding: 20px 30px;
+
+  }
+}
+
+@media (min-width: 1000px) {
+  .header {
+    padding: 20px 50px;
+  }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
@@ -9,13 +22,34 @@ body {
 }
 
 .header {
-  background: black;
+  background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: black;
   padding: 0px 50px;
   font-size: 25px;
+}
+
+.home-img {
+  width: 100vw;
+  /* full bredd på hela viewporten */
+  height: 500px;
+  /* full höjd på skärmen */
+  margin: 0;
+  /* ingen extra marginal */
+  padding: 0;
+  overflow: hidden;
+  /* klipper bort överflöd om det behövs */
+}
+
+.home-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* fyller både höjd & bredd snyggt */
+  display: block;
+  /* tar bort vita mellanrum runt bilden */
 }
 
 .header h1 {
@@ -23,10 +57,21 @@ body {
   align-items: left;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  height: 100px;
+  width: auto;
+}
+
+
 .image-header {
   justify-content: left;
   text-align: left;
-  margin: 0px 0px 0px 30px;
+  margin: 0px 0px 0px 1000px;
 }
 
 .nav-links ul {
@@ -39,8 +84,6 @@ body {
 
 /*mellanrum mellan länkarna*/
 
-
-
 .nav-links ul li {
   margin-left: 100px;
   justify-content: flex-end;
@@ -48,11 +91,17 @@ body {
 
 .nav-links ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 #menu {
   text-align: right;
   margin: 0px 100px;
   justify-content: right;
+}
+
+.image-header {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
 }
