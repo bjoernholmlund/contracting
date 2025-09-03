@@ -15,7 +15,7 @@
 
 
 body {
-  background: lightblue;
+  background: lightslategrey;
   font-family: Roboto, sans-serif;
   margin: 0;
   padding: 0;
@@ -27,39 +27,8 @@ body {
   justify-content: space-between;
   align-items: center;
   color: black;
-  padding: 0px 50px;
+  padding: 0px 200px;
   font-size: 25px;
-}
-
-.home-img {
-  width: 100vw;
-  /* full bredd på hela viewporten */
-  height: 500px;
-  /* full höjd på skärmen */
-  margin: 0;
-  /* ingen extra marginal */
-  padding: 0;
-  overflow: hidden;
-  /* klipper bort överflöd om det behövs */
-}
-
-.home-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* fyller både höjd & bredd snyggt */
-  display: block;
-  /* tar bort vita mellanrum runt bilden */
-}
-
-.header h1 {
-  display: inline;
-  align-items: left;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
 }
 
 .header img {
@@ -67,23 +36,29 @@ body {
   width: auto;
 }
 
-
-.image-header {
-  justify-content: left;
-  text-align: left;
-  margin: 0px 0px 0px 1000px;
+.header h1 {
+  display: inline;
+  align-items: left;
 }
 
-.nav-links ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
+/*the logo*/
+.logo {
+  display: grid;
+  align-items: center;
 }
 
-/*mellanrum mellan länkarna*/
+/*menuposition*/
+#menu {
+  text-align: right;
+  margin: 0px 100px;
+  justify-content: right;
+}
 
+#menu li a:hover {
+  text-decoration: underline;
+}
+
+/* nav-links*/
 .nav-links ul li {
   margin-left: 100px;
   justify-content: flex-end;
@@ -94,14 +69,89 @@ body {
   color: black;
 }
 
-#menu {
-  text-align: right;
-  margin: 0px 100px;
-  justify-content: right;
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
-.image-header {
-  height: 500px;
+/*home image*/
+.home-img {
+  position: relative;
   width: 100%;
-  object-fit: cover;
+  height: 60vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
+
+.home-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/*mellanrum mellan länkarna*/
+.bb-image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*grid-template-columns: repeat(auto-fit, 250px 1fr);*/
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  color: white;
+  border: 2px solid black;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.grid-card:hover {
+  transform: scale(1.05);
+}
+
+.card-overlay {
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.card-overlay h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.card-overlay p {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+
+/*.card-image {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+}*/
