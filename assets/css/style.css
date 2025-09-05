@@ -30,9 +30,10 @@ body {
   cursor: pointer;
 }
 
+/* dold på små skärmar */
 .nav-links {
   display: none;
-  /* dold på små skärmar */
+
 }
 
 .nav-links.open {
@@ -63,7 +64,6 @@ body {
   position: relative;
   width: 100%;
   height: 50vh;
-  /* 50% av skärmen */
   overflow: hidden;
 }
 
@@ -80,7 +80,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
   font-size: 1.5rem;
-  /* lagom för 320px */
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, .7);
   text-align: center;
