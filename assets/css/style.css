@@ -204,6 +204,12 @@ background: #111;
   overflow: hidden;
   transition: transform 0.3s ease;
   will-change: transform;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: black;
 }
 
 .grid-card:hover {
@@ -333,6 +339,17 @@ form > h1 {
 .form-error { 
   color: #b91c1c; 
   font-size: 0.9rem; 
+}
+
+/*footer*/
+.footer {
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 20px;
+  background: #f1f1f1;
+  color: #333;
+  font-size: 0.9rem;
 }
 
 /* === Tablet (≥600px) === */
