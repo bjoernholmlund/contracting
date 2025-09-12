@@ -8,10 +8,20 @@
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <!-- yesterday 09-04-25 - Update-->
-
+<!--aria-controls="menu"-->
+<!--aria-hidden="true"-->
 <body>
-  <!-- header Menu list nav bar-->
+  <!--header Menu list nav bar-->
   <header class="header">
+    <!--Dold input som styr hamburger menyn-->
+    <input type="checkbox" id="nav-check" class="nav-check">
+    <!--Hamburger meny som kollar checkboxen-->
+      <label 
+        for="nav-check" 
+        class="hamburger"
+        aria-label="open menu">
+          <span></span><span></span><span></span>
+      </label>
     <!--<h1>BB-Contracting</h1>-->
     <a href="index.html" class="logo">
       <img src="/assets/img/header-image.png" alt="bb-contracting Logo">
@@ -20,14 +30,16 @@
       <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a>
-          <!--future links 
+          <!--maybe future links 
         <li></li>
         <li></li>
         <li></li>
         <li></li>-->
         </li>
         <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
+    <label for="nav-check" class="nav-overlay" aria-hidden="true"></label>
   </header>
 
   <!--Image under the header-->
