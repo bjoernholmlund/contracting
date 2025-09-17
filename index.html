@@ -13,39 +13,38 @@
 <body>
   <!--header Menu list nav bar-->
   <header class="header">
+      <a href="index.html" class="logo">
+        <img src="/assets/img/header-image.png" alt="bb-contracting Logo">
+      </a>
     
-    <!--Dold input som styr hamburger menyn-->
-    <input type="checkbox" id="nav-check" class="nav-check">
-
-    <!--Hamburger meny som togglar checkboxen-->
-      <label 
-        for="nav-check" 
-        class="hamburger"
-        aria-label="open menu">
-          <span></span>
-          <span></span>
-          <span></span>
-      </label>
-
-    <!--<h1>BB-Contracting</h1>-->
-    <a href="index.html" class="logo">
-      <img src="/assets/img/header-image.png" alt="bb-contracting Logo">
-    </a>
-    <nav class="nav-links">
-      <ul id="menu">
+    <div class="off-screen-menu">
+      <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a>
-          <!--maybe future links 
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>-->
-        </li>
+        <li><a href="services.html">Service</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+    </div> 
+    
+    <nav class="desktop-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>  
+    
+    <nav class="nav">
+      <button 
+        class="ham-menu" 
+        aria-controls="main-menu" 
+        aria-expanded="false" 
+        aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
-    <!--<label for="nav-check" class="nav-overlay" aria-hidden="true"></label>-->
-  </header>
+</header>
 
   <!--Image under the header-->
   <div class="home-img">
@@ -103,6 +102,7 @@
     <p>Follow us on social media: <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a></p>
   </footer>
 
+  <script src="../assets/js/index.js"></script>
 </body>
 
 </html>
