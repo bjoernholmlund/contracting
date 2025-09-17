@@ -1,16 +1,20 @@
-# This is my Business site
+# This is my Business site 
+
+![](assets/img/Mockuppicture.png) 
 
 ## Live Demo 
 
-<a href="https://bb-contracting.netlify.app/">Page</a>
+<a href="https://bb-contracting.netlify.app/">The Page</a>
 
 ## Features 
 
-- **Responsive header:**
+- **Responsive Page:**
 
-- **Menulist:**
+- **Menulist**
 
-- **Information**
+- **Grid/card**
+
+- **Form**
 
 - **Footer**
 
@@ -19,3 +23,4 @@
 
 - **HTML**
 - **CSS**
+- **JS**
