@@ -1,6 +1,6 @@
 # This is my Business site 
 
-![](assets/img/Mockuppicture.png) 
+![](assets/img/Mocukuppic.png) 
 
 ## Live Demo 
 
